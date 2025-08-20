@@ -401,12 +401,12 @@ marquee{
     position: fixed;
     width: 390px;
     height: 85px;
-    bottom: 0px;
+    bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
     justify-content: space-between; 
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 50px;
+    background-color: rgb(177, 35, 35);
+    /* padding-bottom: 50px; */
     /* z-index: 2px; */
 }
 .bottom-btn-container{
