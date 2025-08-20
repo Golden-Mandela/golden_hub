@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="login-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-shadow1"></div>
+      <div class="background-shadow2"></div>
+      <p>Log in</p>
+      <div class="main-container">
+        <form id="loginForm">
+          <div class="input-field">
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+          <div class="input-field2">
+            <input type="password" id="password" placeholder="Password" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 15 15"
+              fill="none"
+            >
+              <path
+                d="M7.5 5.625C7.00272 5.625 6.52581 5.82254 6.17417 6.17417C5.82254 6.52581 5.625 7.00272 5.625 7.5C5.625 7.99728 5.82254 8.47419 6.17417 8.82583C6.52581 9.17746 7.00272 9.375 7.5 9.375C7.99728 9.375 8.47419 9.17746 8.82583 8.82583C9.17746 8.47419 9.375 7.99728 9.375 7.5C9.375 7.00272 9.17746 6.52581 8.82583 6.17417C8.47419 5.82254 7.99728 5.625 7.5 5.625ZM7.5 10.625C6.6712 10.625 5.87634 10.2958 5.29029 9.70971C4.70424 9.12366 4.375 8.3288 4.375 7.5C4.375 6.6712 4.70424 5.87634 5.29029 5.29029C5.87634 4.70424 6.6712 4.375 7.5 4.375C8.3288 4.375 9.12366 4.70424 9.70971 5.29029C10.2958 5.87634 10.625 6.6712 10.625 7.5C10.625 8.3288 10.2958 9.12366 9.70971 9.70971C9.12366 10.2958 8.3288 10.625 7.5 10.625ZM7.5 2.8125C4.375 2.8125 1.70625 4.75625 0.625 7.5C1.70625 10.2438 4.375 12.1875 7.5 12.1875C10.625 12.1875 13.2937 10.2438 14.375 7.5C13.2937 4.75625 10.625 2.8125 7.5 2.8125Z"
+                fill="white"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </div>
+          <div class="reset-password-box">
+            <div class="save-password">
+              <div class="checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="save">Save password</div>
+            </div>
+            <div class="reset-password">Reset password</div>
+          </div>
+          <button type="submit" id="login">Log in</button>
+        </form>
+      </div>
+      <div class="sign-up">
+        Don’t have an account ?
+        <a href="sign-up-page.html" style="text-decoration: none"
+          ><span> Sign up </span></a
+        >
+      </div>
+    </div>
+    <script src="login-page.js"></script>
+    <script src="sign-up-page.js"></script>
+  </body>
+</html>

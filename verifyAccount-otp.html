@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>otp page</title>
+    <link rel="stylesheet" href="verifyAccount-otp.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <p class="verification-content1">Phone verification required!</p>
+      <p class="verification-content2">
+        Verification code has been sent to <span>08138419908</span> enter code
+        to verify your phone number
+      </p>
+      <div class="input-container">
+        <div class="input-box">
+          <input
+            type="password"
+            id="input1"
+            maxlength="1"
+            onkeyup="next(this, 'input2')"
+          />
+          <input
+            type="password"
+            id="input2"
+            maxlength="1"
+            onkeyup="next(this, 'input3')"
+          />
+          <input
+            type="password"
+            id="input3"
+            maxlength="1"
+            onkeyup="next(this, 'input4')"
+          />
+          <input
+            type="password"
+            id="input4"
+            maxlength="1"
+            onkeyup="next(this, 'input5')"
+          />
+          <input
+            type="password"
+            id="input5"
+            maxlength="1"
+            onkeyup="next(this, 'input6')"
+          />
+          <input
+            type="password"
+            id="input6"
+            maxlength="1"
+            onkeyup="next(this, 'input1')"
+          />
+        </div>
+        <p>Resend code</p>
+      </div>
+      <img src="image/star.svg" alt="" />
+      <button class="verify-btn">Verify</button>
+
+      <div class="success-popUp">
+        <div class="successful-container">
+          <div class="successful-vector">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M3.49087 18.4775C3.47089 18.2474 3.49896 18.0156 3.5733 17.7969C3.64764 17.5782 3.76663 17.3774 3.92272 17.2071C4.07881 17.0368 4.26858 16.9009 4.48 16.8078C4.69143 16.7148 4.91988 16.6667 5.15087 16.6667H8.33337C8.77539 16.6667 9.19932 16.8423 9.51188 17.1548C9.82444 17.4674 10 17.8913 10 18.3333V34.1667C10 34.6087 9.82444 35.0326 9.51188 35.3452C9.19932 35.6578 8.77539 35.8333 8.33337 35.8333H6.52837C6.11122 35.8335 5.70921 35.6771 5.40172 35.3952C5.09423 35.1134 4.90362 34.7264 4.86753 34.3108L3.49087 18.4775ZM15 17.8125C15 17.1158 15.4334 16.4925 16.0625 16.1958C17.4367 15.5475 19.7775 14.245 20.8334 12.4842C22.1942 10.2142 22.4509 6.11335 22.4925 5.17418C22.4984 5.04252 22.495 4.91085 22.5125 4.78085C22.7384 3.15335 25.8792 5.05418 27.0834 7.06418C27.7375 8.15418 27.8209 9.58668 27.7525 10.7058C27.6784 11.9025 27.3275 13.0583 26.9834 14.2067L26.25 16.6542H35.2975C35.555 16.6542 35.809 16.7138 36.0396 16.8285C36.2702 16.9431 36.4711 17.1096 36.6265 17.3149C36.7819 17.5202 36.8877 17.7588 36.9354 18.0118C36.9831 18.2649 36.9716 18.5255 36.9017 18.7733L32.4267 34.62C32.3279 34.9695 32.1177 35.2772 31.8279 35.4962C31.5382 35.7152 31.1849 35.8336 30.8217 35.8333H16.6667C16.2247 35.8333 15.8007 35.6578 15.4882 35.3452C15.1756 35.0326 15 34.6087 15 34.1667V17.8125Z"
+                stroke="white"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="success">Success!</p>
+          <p class="success-content">
+            Verification was successful! Proceed to continue
+          </p>
+          <img src="image/star.svg" alt="" />
+          <button class="proceed-btn">Proceed</button>
+        </div>
+      </div>
+    </div>
+    <script src="verifyAccount-otp.js"></script>
+  </body>
+</html>

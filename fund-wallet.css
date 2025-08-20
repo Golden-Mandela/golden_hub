@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+.container{
+    position: relative;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 390px;
+    height: 100vh;
+    margin: auto; 
+    background-color: #ffffff;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.nav-box{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 107px;
+    background-color: rgb(255, 255, 255);
+}
+.item-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 342px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.fund-wallet{
+    text-align: center;
+    align-content: center;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.procedure-container{
+    margin: auto;
+    width: 342px;
+    height: auto;
+    margin-top: 33px;
+}
+.procedure-container p{
+    line-height: 1.5;
+}
+.procedure{
+    margin: 0px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.proc{
+    margin: 0px;
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+.procedure-container span{
+font-weight: 600;
+}
+.bank-details-box{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: auto;
+    width: 320px;
+    height: 185px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.25);
+}
+.bank-name{
+    margin-top: 15px;
+    text-align: center;
+    align-content: center;
+    width: 209px;
+    height: 21px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 39px;
+}
+.bank-name span{
+    font-weight: bold;
+}
+.account-number-container{
+    margin-top: 15px;
+    display: flex;
+    width: 240px;
+    height: 21px;
+    margin-left: 39px;
+    align-items: center;
+    justify-content: space-between;
+}
+.account-number-box{
+    text-align: center;
+    align-content: center;
+    width: 129px;
+    height: 21px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    font-weight: bold;
+}
+.account-number{
+    width: auto;
+    height: 15px;
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.account-name-container{
+    margin-top: 20px;
+    display: flex;
+    width: 220px;
+    height: 21px;
+    margin-left: 39px;
+    align-items: center;
+    justify-content: space-between;
+}
+.account-name-box{
+    text-align: center;
+    align-content: center;
+    width: 116px;
+    height: 21px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    font-weight: bold;
+}
+.account-name{
+    width: auto;
+    height: 15px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.wallet-id-container{
+    margin-top: 15px;
+    display: flex;
+    width: 190px;
+    height: 21px;
+    margin-left: 39px;
+    align-items: center;
+    justify-content: space-between;
+}
+.wallet-id-box{
+    text-align: center;
+    align-content: center;
+    width: 73px;
+    height: 21px;
+    border-radius: 2px;
+    background: #D9D9D9;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    font-weight: bold;
+}
+.copied-alert{
+    display: none;
+    position: absolute;
+    top: 13em;
+    left: 23%; 
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 3px;
+    background-color: #858585;
+    color: white;
+    animation: slideDown 0.5s ease-out forwards;
+    z-index: 200px;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-250%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.back-to-dashboard{
+    margin: auto;
+    display: block;
+    border: none;
+    width: 318px;
+    height: 38px;
+    border-radius: 5px;
+    background: #310048;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 198px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.copy-vector svg:hover{
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+}

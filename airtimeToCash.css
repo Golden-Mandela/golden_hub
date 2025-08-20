@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+ .pop-up-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 390px;
+    height: 100%;
+    margin: auto; 
+    background-color: #ffffff; 
+    font-weight: 400;
+} 
+.pop-up-container::-webkit-scrollbar {
+    display: none;
+  }
+.menu-box{
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
+    width: 390px;
+    height: auto; 
+    margin: auto;
+    background-color: rgb(255, 255, 255); 
+    margin-bottom: 20px;
+}
+.menu-item{
+    margin: auto;
+    display: flex;
+    width: 342px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+   background-color: rgb(255, 255, 255);
+}
+
+.menu-box .center-text{ 
+    color: rgba(0, 0, 0, 0.90);   
+    font-size: 18px; 
+    font-weight: 600;
+}
+.menu-box .notification-container{ 
+    margin-top: 3px;
+    height: auto;
+}
+.close-pop-up{
+    cursor: pointer; 
+}
+.warning-container{
+    margin: auto;
+    width: 342px;
+    height: 409px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.25);
+    padding: 1px;
+} 
+.warning-container svg{
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+}
+.warning-container .warning{
+    margin: auto;
+    margin-top: 15px;
+    width: 300px;
+    color: #000;
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: 400;
+}
+.warning-container .before{
+    margin: auto;
+    margin-top: 6px;
+    width: 325px;
+    color: #000;
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: 300; 
+}
+ul{
+    list-style-type: decimal;
+    margin: auto;
+    width: auto;
+    width: 300px; 
+    height: auto;
+    margin-top: 27px;
+    padding: 0;
+    margin-left: 30px;
+}
+ul li{
+    color: #000;
+    font-size: 15px; 
+    font-weight: 300;
+    margin-bottom: 5px; 
+}
+.WhatsApp{
+    color: #000;
+    font-size: 15px; 
+    font-weight: 300; 
+}
+.WhatsApp span{
+    font-weight: 600; 
+}
+.instruction{
+    margin: auto;
+    width: 310px;
+    height: auto;
+    color: #000; 
+    font-size: 17px; 
+    font-weight: 400;
+    margin-top: 40px;
+}
+.dial, .phone-number, .i-have-transferred-airtime{
+    font-weight: 600;
+}
+.btn{
+    display: block;
+    margin: auto;
+    margin-top: 58px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #310048;
+    color: #FFF; 
+    font-size: 15px; 
+    font-weight: 600;
+    margin-bottom: 90px;
+    cursor: pointer;
+}

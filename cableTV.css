@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+ .container{
+    overflow-y: auto;
+    overflow-x:hidden;
+    width: 390px;
+    height: 100vh;
+    background-color: #ffffff; 
+    font-weight: 400;
+    margin: auto; 
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+.nav-box{
+    width: inherit;
+    height: 10px;
+    height: auto;
+    background-color: #55005C;
+    color: white;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 25px
+}
+.menu-box{
+    padding-top: 5px;
+    display: flex;
+    width: 342px;
+    height: auto; 
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.notification-container svg{ 
+    display: block; 
+}
+.menu-box .notification-container{ 
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    border-radius: 50%;
+    background-color: white;
+} 
+.start-time-container, .dsTv-logo-container, .goTv-container{
+    position: relative;
+    margin: auto;
+    width: 354px;
+    height: 365px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.25); 
+    margin-bottom: 45px;
+}
+.goTv-container{
+    margin-bottom: 100px;
+}
+.start-time-container{
+    margin-top: 15px;
+}
+.tv-logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    width: 210px;
+    height: 46px; 
+}
+.tv-logo{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.25); 
+}
+.ds-tv-logo-container, .go-tv-logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    width: 185px;
+    height: 46px; 
+}
+.start-time-logo-box, .dsTv-logo-box, .goTv-logo-box{
+    position: absolute;
+    width: 249px;
+    height: 183px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: lightgray 50% / cover no-repeat;
+    top: 73px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.start-time-btn, .dstv-btn, .goTv-btn{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 87px;
+    height: 38px;
+    color: white;
+    border-radius: 50px;
+    background: #55005C;
+    border: 6px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    bottom: 35px;
+    left: 21.5%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.bottom-nav-bar-container{
+    display: flex;
+    position: fixed;
+    width: 343px;
+    height: 85px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between; 
+    background-color: white;
+    z-index: 20px;
+}
+.bottom-btn-container{
+    height: 80px;
+    width: 85px;
+    justify-items: space-between;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+.home-iconAndhome-content-box,
+.history-iconAndhistory-content-box,
+.data-iconAnddata-content-box,
+.profile-iconAndprofile-content-box{
+    height: 60px;
+    width: 60px;
+    justify-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+ .home-content{
+    color: #000000; 
+ }

@@ -1,0 +1,691 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+ .container{
+    position: relative;
+    overflow-y: auto;
+    overflow-x:hidden;
+    width: 390px;
+    height: 100vh; 
+    background-color: #ffffff; 
+    font-weight: 400;
+    margin: auto; 
+}
+.container::-webkit-scrollbar {
+    display: none;
+  } 
+.history-list{
+    padding-left: 0px;
+    z-index: 20;
+  }
+.t-record{
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 400;
+    background-color: #ffffff;
+    z-index: 200;
+}
+
+.mainContner{
+    margin: auto;
+    width: 342px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.airtime-history-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 342px;
+    height: 50px;
+    /* height: 400px; */
+    flex-shrink: 0;
+    margin-top: 23px;
+    border-radius: 5px;
+    background: #E8E8E8;
+    margin-bottom: 10px;
+}
+.airtime-history-div .text-div{
+    width: 204px;
+    height: 40px;
+    margin-left: 10px;
+}
+.airtime-history-div .receipt-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 124px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+}
+.receipt-div p{
+    height: 15px;
+    width: auto;
+    color: rgb(0, 202, 0);
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+.vector-box{
+    width: 15px;
+    height: 15px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+.airtime-purchase{
+    height: 15px;
+    width: auto;
+    margin: 0;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 3px;
+}
+.little-time{
+    font-size: 8px;
+}
+.nepa-time, .transfer-time, .dataNumber, .airtimeNumber{
+    font-size: 9.1px;
+}
+.phone{
+    height: 15px;
+    width: auto;
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+}
+.mainReceipt{
+    padding-top: 15px;  
+    border-radius: 5px;
+    margin: auto;
+    display: none; 
+    height: auto;
+    width: 335px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px rgb(148, 148, 148);
+    padding-bottom: 0.1px;
+    animation: slideDown 0.5s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+ 
+ .vector-box2{
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #61FF00;  
+    margin: auto;
+    text-align: center;
+    align-content: center;
+ }
+ .failed-vector-box{
+    display: none;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+ }
+ .success{
+    color: #000;
+    text-align: center;
+    font-size: 32px; 
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: -10px; 
+ }
+ .airtimeSub-text{
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    color: #000;
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: 300;
+    margin-top: 15px;   
+    padding-bottom: 25px;
+ }
+ .networkBox{
+    margin: auto;
+    width: 279px;
+    height: 36px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    color: #000;
+    text-align: center;
+    color: #000; 
+    font-size: 20px; 
+    font-weight: 600;
+    align-content: center;
+    margin-top: 15px;
+ }
+ .recepient-container{
+    margin: auto;
+    width: 279px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 54px;
+ }
+ .recepient-number-airtime{
+    width: 279px;
+    height: 36px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    color: #000;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: 300;
+    align-content: center;
+ }
+  .recepient-number-airtime .recepient{
+    color: #000; 
+    font-size: 20px; 
+    font-weight: 600;
+ }
+ .dateAirtime{
+    width: 279px;
+    height: 36px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    color: #000;
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: 300;
+    margin-top: 16px;
+    align-content: center;
+ }
+  .dateAirtime .date-airtime{
+    color: #000;
+    font-size: 20px; 
+    font-weight: 600; 
+    
+ } 
+.successfull-main-receipt-container{ 
+  /* display: none;  */
+    width: 300px;
+    height: 360px;
+    margin: auto; 
+    background: #310048;
+    padding-top: 18px;
+    margin-bottom: 10px;
+}
+.main-receipt{ 
+    margin: auto;
+    width: 254px;
+    height: 330.938px;
+    padding-top: 15px;
+    background-color: #ffffff; 
+}
+.dataSuccessful-container{
+    width: 200px;
+    height: 41.104px;
+    background-color: #55005C; 
+    margin: auto; 
+    
+}
+.dataSuccessful-box{
+    width: 200px;
+    height: 41.104px;
+    border-radius: 42.158px 0px;
+    background: #FF7A00;
+    color: #FFF;
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: 700;
+    align-content: center;
+}
+.main-receipt .service-type{
+    text-align: center;
+    margin: 10;
+    color: #A65000; 
+    font-size: 15px; 
+    font-weight: 400; 
+}
+.recepient-details-container{
+    width: 200px;
+    height: 188px;
+    margin: auto;
+}
+.recepient-number, .Purchased-bundle, .networkType, .date{
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    color: #000;
+    font-size: 12px; 
+    font-weight: 300;
+    align-content: center;
+    line-height: 1.2;
+    text-align: center;
+}
+.Purchased-bundle{
+    height: 38px;
+    padding-right: 10px;
+}
+.check-balance-code{
+    color: #000; 
+    font-size: 12px; 
+    font-weight: 400;
+    text-align: center;
+}
+.check-balance-code span{
+    color: #000; 
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+/* failed data receipt */
+.main-receipt-container{
+  display: none;
+    width: 300px;
+    height: 360px;
+    margin: auto;
+    background: #310048;
+    padding-top: 18px;
+    margin-bottom: 10px; 
+}
+.main-receipt{ 
+    margin: auto;
+    width: 254px;
+    height: 330.938px;
+    padding-top: 15px;
+    background-color: #ffffff;
+}
+.successful-container{
+    width: 200px;
+    height: 41.104px;
+    background-color: #55005C;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.successful-box{
+    width: 200px;
+    height: 41.104px;
+    border-radius: 42.158px 0px;
+    background: #FF7A00;
+    color: #FFF;
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: 700;
+    align-content: center;
+}
+.failed-container{
+    width: 120px;
+    height: 63px;
+    margin: auto;
+    justify-items: center;
+}
+
+.failed-icon,.failed, .invalid-numbber{
+    margin: 0;
+}
+.failed{
+    color: #F00; 
+    font-size: 9.338px; 
+    font-weight: 500;
+}
+.invalid-numbber{
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center; 
+    font-size: 12px; 
+    font-weight: 500;
+    margin-top: 3px; 
+}
+.main-receipt .svic-type{ 
+    text-align: center;
+    margin: 8px;
+    color: #A65000; 
+    font-size: 15px; 
+    font-weight: 400; 
+}
+.recepient-details-container{
+    width: 200px;
+    height: 188px;
+    margin: auto;
+}
+.recepient-number, .Purchased-bundle, .networkType, .date{
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    color: #000;
+    font-size: 12px; 
+    font-weight: 300;
+    align-content: center;
+    line-height: 1.2;
+    text-align: center;
+}
+.Purchased-bundle{
+    height: 38px;
+}
+.check-balance-code{
+    color: #000; 
+    font-size: 12px; 
+    font-weight: 400;
+    text-align: center;
+}
+.check-balance-code span{
+    color: #000; 
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+/* TRANSFERE*/
+.p2p-history-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 342px;
+    height: 50px;
+    /* height: 400px; */
+    flex-shrink: 0;
+    margin-top: 23px;
+    border-radius: 5px;
+    background: #E8E8E8;
+    margin-bottom: 10px;
+}
+.transfered-username{
+    font-size: 12px;
+}
+.p2p-history-div p{
+    align-content: center;
+    width: 204px;
+    height: 40px;
+    margin-left: 10px;
+}
+.p2p-history-div .receipt-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 124px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+} 
+.transfer-receipt{ 
+    margin: auto; 
+    width: 335px;
+    height: 240px;
+    background: #FFF;
+    border-radius: 3px;
+} 
+.successReceipt-vector-box{ 
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    border: 1px solid #61FF00;
+    border-radius: 50%;
+}
+ 
+.failed-receipt-vector-box{
+    display: none; 
+    margin: auto;
+    margin-top: 50px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+ 
+.transfer-receipt .successful{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px;
+    margin-top: 5px;
+}
+.transfer-sub-text{
+    margin: auto;
+    width: 280px;
+    height: auto;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.transferDateAndTimer{
+    margin: 5px; 
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* NEPA bill toggle */
+.nepa-bill-receipt{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 335px;
+    height: auto;
+    background: #FFF;
+    border-radius: 3px;
+}
+.payment-successful{
+    margin: auto;
+    width: 200px;
+    height: 35px;
+    color: #000; 
+    font-size: 18px; 
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    background: #D9D9D9;
+    align-content: center;
+}
+.eedc{
+    color: #000;
+    font-size: 18px; 
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
+.center-container{ 
+    margin: auto;
+    width: 320px;
+    height: auto;
+    margin-top: 19px;
+}
+
+.pDiv{
+    display: flex;
+    justify-content: space-between; 
+    margin: auto;
+    width: 315px;
+    height: auto; 
+    margin-bottom: 2px;
+}
+.pDiv p{
+    margin: 1px;
+    height: auto;
+    align-content: center;
+    
+}
+.pDiv p:nth-child(2) {
+    width: 55%;
+    line-height: 1.2;    
+    text-align: right;
+}
+.shadow{
+    box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Tv receipt toggle */
+.tv-main-receipt{
+    margin: auto;
+    width: 335px;
+    height: 310px;
+    background-color: white;
+    border-radius: 3px;
+ 
+} 
+.tv-success-vector { 
+    margin: auto;
+    width: 32.797px;
+    height: 32.797px;
+    margin-top: 10px;
+    
+}
+.tv-failed-vector{
+    display: none;
+     margin: auto;
+    width: 32.797px;
+    height: 32.797px;
+    margin-top: 10px;
+}
+.tv-failed-vector svg{
+     width: 32.797px;
+    height: 32.797px;
+}
+.tv-success{
+    color: #000;
+    text-align: center; 
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+ .tv-details-container{
+    margin: auto;
+    height: 225px;
+    width: 310px; 
+    border-radius: 5px;
+    background: #D9D9D9;
+    margin-top: 15px;
+    color: #000; 
+    font-size: 15px; 
+    font-weight: 400;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.details-parent-div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: auto;
+    width: 95%;
+    margin-bottom: 5px; 
+}
+
+.details-parent-div p{
+    margin: 0px;
+    height: 20px;
+    width: 50%;
+}
+.details-parent-div p:nth-child(2){
+    text-align: right;
+}
+#time-margin{
+    margin-top: 20px;
+}
+.timeWidth{
+ width: 30px;
+ height: auto;
+}
+.timeWidth2, .expiring{
+    width: 70px;
+    height: auto; 
+    font-size: 12.5px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.margin{
+    margin-top: 110px;
+}
+.bottom-nav-bar-container{
+    display: flex;
+    position: fixed;
+    width: 343px;
+    height: 85px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between; 
+    background-color: white;
+    z-index: 20px;
+}
+.bottom-btn-container{
+    height: 80px;
+    width: 85px;
+    justify-items: space-between;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+.home-iconAndhome-content-box,
+.history-iconAndhistory-content-box,
+.data-iconAnddata-content-box,
+.profile-iconAndprofile-content-box{
+    height: 60px;
+    width: 60px;
+    justify-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.history-content{
+    color: rgb(166, 80, 0);
+}
+ 

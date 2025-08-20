@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+.container{
+    overflow-y: hidden;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 390px;
+    height: 100vh;
+    margin: auto; 
+    background-color: #ffffff;
+}
+.nav-container{
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    width: 342px;
+    height: auto;
+    justify-content: space-between;
+}
+.close-vector{
+    cursor: pointer;
+}
+.illostrator{
+    margin-left: 30%;
+}
+.content-container{
+    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+    border-radius: 50px 50px 0px 0px;
+    background: #310048;
+    margin-top: 50px; 
+}
+.content-container::-webkit-scrollbar{
+    display: none;
+}
+.contact-us{
+    text-align: center;
+    color: #FFF;
+    font-size: 32px; 
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.subline-text{
+    margin: auto;
+    width: 350px;
+    height: auto;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 15px;
+}
+.flex-box{
+    display: flex;
+    height: 32px;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.item-box{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    align-content: center;
+    justify-items: center;
+}
+.item-box svg{
+    display: block;
+}
+.download-btn{
+    display: flex;
+    margin: auto;
+    width: 165px;
+    height: 36px;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.download-btn p{
+    padding: 0px;
+    margin-right: 10px;
+}
+.download-btn .vector{
+    display: block;
+    margin-left: 10px;
+}

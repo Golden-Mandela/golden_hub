@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="sign-up-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-shadow1"></div>
+      <div class="background-shadow2"></div>
+
+      <div class="main-container">
+        <p class="header">Create an account</p>
+        <form id="signUpForm">
+          <div class="input-field">
+            <input
+              type="tel"
+              id="PhoneNumber"
+              name="phone"
+              placeholder="Phone number"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              id="referralId"
+              name="username"
+              placeholder="Referral Id (optional)"
+            />
+          </div>
+          <div class="input-field2">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" id="sign-up">Sign-up</button>
+        </form>
+        <div class="login">
+          Already have an account ?
+          <a href="login-page.html" style="text-decoration: none"
+            ><span> Login </span></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="sign-up-page.js"></script>
+  </body>
+</html>

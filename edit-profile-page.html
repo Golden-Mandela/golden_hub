@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit profile page</title>
+    <link rel="stylesheet" href="edit-profile-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-box">
+        <div class="item-container">
+          <div class="back-vector">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5.25 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H5.25C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25Z"
+                fill="white"
+              />
+              <path
+                d="M5.56038 12L11.7809 18.219C11.9217 18.3598 12.0008 18.5508 12.0008 18.75C12.0008 18.9491 11.9217 19.1401 11.7809 19.281C11.64 19.4218 11.449 19.5009 11.2499 19.5009C11.0507 19.5009 10.8597 19.4218 10.7189 19.281L3.96888 12.531C3.89903 12.4613 3.84362 12.3785 3.80581 12.2874C3.768 12.1963 3.74854 12.0986 3.74854 12C3.74854 11.9013 3.768 11.8036 3.80581 11.7125C3.84362 11.6214 3.89903 11.5386 3.96888 11.469L10.7189 4.71897C10.8597 4.57814 11.0507 4.49902 11.2499 4.49902C11.449 4.49902 11.64 4.57814 11.7809 4.71897C11.9217 4.8598 12.0008 5.05081 12.0008 5.24997C12.0008 5.44913 11.9217 5.64014 11.7809 5.78097L5.56038 12Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="golden-hub">GOLDEN HUB</div>
+        </div>
+      </div>
+      <div class="bank-details-box">
+        <div class="image-container">
+          <img src="image/profile-page-pix.svg" alt="profile page picture" />
+          <div class="camera-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="14"
+              viewBox="0 0 18 14"
+              fill="none"
+            >
+              <path
+                d="M16.8125 2.625H13.5703C13.4531 2.625 13.3078 2.54922 13.1945 2.42969L12.1289 0.757812C11.6953 0.125 11.5 0.125 10.7969 0.125H7.20312C6.5 0.125 6.26562 0.125 5.87227 0.758203L4.80547 2.42969C4.71875 2.52422 4.59688 2.625 4.46875 2.625V2C4.46875 1.91712 4.43583 1.83763 4.37722 1.77903C4.31862 1.72042 4.23913 1.6875 4.15625 1.6875H2.59375C2.51087 1.6875 2.43138 1.72042 2.37278 1.77903C2.31417 1.83763 2.28125 1.91712 2.28125 2V2.625H1.1875C0.93886 2.625 0.700403 2.72377 0.524587 2.89959C0.348772 3.0754 0.25 3.31386 0.25 3.5625V12.9375C0.25 13.1861 0.348772 13.4246 0.524587 13.6004C0.700403 13.7762 0.93886 13.875 1.1875 13.875H16.8125C17.0611 13.875 17.2996 13.7762 17.4754 13.6004C17.6512 13.4246 17.75 13.1861 17.75 12.9375V3.5625C17.75 3.31386 17.6512 3.0754 17.4754 2.89959C17.2996 2.72377 17.0611 2.625 16.8125 2.625ZM9.17617 11.3711C8.42033 11.4066 7.67142 11.2126 7.02787 10.8146C6.38431 10.4166 5.8762 9.83328 5.57031 9.14119C5.26441 8.4491 5.17505 7.68066 5.31395 6.93684C5.45285 6.19302 5.81352 5.50862 6.34857 4.97357C6.88362 4.43852 7.56802 4.07785 8.31184 3.93895C9.05566 3.80005 9.8241 3.88941 10.5162 4.19531C11.2083 4.5012 11.7916 5.00931 12.1896 5.65287C12.5876 6.29642 12.7816 7.04533 12.7461 7.80117C12.7013 8.73353 12.3108 9.61577 11.6508 10.2758C10.9908 10.9358 10.1085 11.3263 9.17617 11.3711Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <p class="username">
+          Username:<span
+            ><input type="text" id="usernameInputEl" placeholder="Mandela"
+          /></span>
+        </p>
+        <div class="bank-details">Bank details</div>
+        <p class="bank-name">
+          Bank name:<span
+            ><input type="text" id="bankNameInput" placeholder="First Bank"
+          /></span>
+        </p>
+        <p class="account-name">
+          Account name:<span
+            ><input
+              type="text"
+              id="accountNameInput"
+              placeholder="Ugwuanyi Monday Joel"
+          /></span>
+        </p>
+        <p class="account-number">
+          Account number:<span
+            ><input
+              type="number"
+              id="acctNumberInput"
+              class="account-number"
+              placeholder="3133184591"
+          /></span>
+        </p>
+      </div>
+      <button class="upload-btn" onclick="updateProfile()">Update</button>
+      <div class="overlay">
+        <div class="successful-div">
+          <p class="overlay-content">Profile upload successful</p>
+          <div class="close"></div>
+        </div>
+      </div>
+    </div>
+    <script src="edit-profile-page.js"></script>
+    <script src="sign-up-page.js"></script>
+  </body>
+</html>

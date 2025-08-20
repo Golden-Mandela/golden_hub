@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form airtime to cash</title>
+    <link rel="stylesheet" href="form-airtime-to-cash.css" />
+  </head>
+  <body>
+    <div class="pop-up-container">
+      <div class="menu-box">
+        <div id="back" class="close-pop-up">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M5.25 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H5.25C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25Z"
+              fill="black"
+            />
+            <path
+              d="M5.56062 12L11.7811 18.219C11.9219 18.3598 12.0011 18.5508 12.0011 18.75C12.0011 18.9492 11.9219 19.1402 11.7811 19.281C11.6403 19.4218 11.4493 19.5009 11.2501 19.5009C11.051 19.5009 10.8599 19.4218 10.7191 19.281L3.96912 12.531C3.89928 12.4613 3.84386 12.3786 3.80605 12.2875C3.76824 12.1963 3.74878 12.0987 3.74878 12C3.74878 11.9014 3.76824 11.8037 3.80605 11.7126C3.84386 11.6214 3.89928 11.5387 3.96912 11.469L10.7191 4.719C10.8599 4.57817 11.051 4.49905 11.2501 4.49905C11.4493 4.49905 11.6403 4.57817 11.7811 4.719C11.9219 4.85983 12.0011 5.05084 12.0011 5.25C12.0011 5.44916 11.9219 5.64017 11.7811 5.781L5.56062 12Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <div class="center-text">Turn mtn airtime into cash</div>
+        <div class="notification-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_181_140)">
+              <path
+                d="M11.9999 2C10.1434 2 8.36294 2.7375 7.05018 4.05025C5.73743 5.36301 4.99993 7.14348 4.99993 9V12.528C5.00008 12.6831 4.96413 12.8362 4.89493 12.975L3.17793 16.408C3.09406 16.5757 3.05445 16.7621 3.06288 16.9494C3.07131 17.1368 3.12748 17.3188 3.22608 17.4783C3.32467 17.6379 3.4624 17.7695 3.6262 17.8608C3.78999 17.9521 3.97441 18 4.16193 18H19.8379C20.0255 18 20.2099 17.9521 20.3737 17.8608C20.5375 17.7695 20.6752 17.6379 20.7738 17.4783C20.8724 17.3188 20.9286 17.1368 20.937 16.9494C20.9454 16.7621 20.9058 16.5757 20.8219 16.408L19.1059 12.975C19.0364 12.8362 19.0001 12.6832 18.9999 12.528V9C18.9999 7.14348 18.2624 5.36301 16.9497 4.05025C15.6369 2.7375 13.8564 2 11.9999 2ZM11.9999 21C11.3793 21.0002 10.7739 20.8079 10.2671 20.4498C9.76025 20.0916 9.37694 19.5851 9.16993 19H14.8299C14.6229 19.5851 14.2396 20.0916 13.7328 20.4498C13.226 20.8079 12.6205 21.0002 11.9999 21Z"
+                fill="#2E0032"
+              />
+              <circle cx="17.5" cy="4.5" r="2.5" fill="#FF7A00" />
+            </g>
+            <defs>
+              <clipPath id="clip0_181_140">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="header">
+        Kindly wait as your transaction is under process, fill in the form
+        properly to receive your cash.
+      </div>
+      <div class="form-div">
+        <div class="provide">Provide the following</div>
+        <form id="form">
+          <label for="username">Username</label>
+          <input type="text" class="username" />
+          <label for="phone-number">Phone number</label>
+          <input type="tel" class="Phone-number" />
+          <label for="amount">Amount of airtime transfered</label>
+          <input type="number" class="amount" />
+          <label for="account-number">Account number</label>
+          <input type="number" class="account-number" />
+          <label for="account-name">Account name</label>
+          <input type="text" class="account-name" /><br />
+          <label for="bank-name">Bank name</label>
+          <input type="text" class="bank-name" />
+          <div class="btn-container">
+            <button class="cancle">Cancel</button>
+            <button class="cancle">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="overlay">
+        <div class="submited-pop-up">
+          <p class="submit">Submitted..!</p>
+          <p class="wait">Kindly wait for alert</p>
+          <a href="dashboard.html"
+            ><div class="submit-btn-div">
+              <button class="submit-btn">Ok</button>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="form-airtime-to-cash.js"></script>
+  </body>
+</html>

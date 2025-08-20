@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile page</title>
+    <link rel="stylesheet" href="profile-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-box">
+        <div class="item-container">
+          <div class="back-vector">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5.25 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H5.25C5.05109 12.75 4.86032 12.671 4.71967 12.5303C4.57902 12.3897 4.5 12.1989 4.5 12C4.5 11.8011 4.57902 11.6103 4.71967 11.4697C4.86032 11.329 5.05109 11.25 5.25 11.25Z"
+                fill="white"
+              />
+              <path
+                d="M5.56038 12L11.7809 18.219C11.9217 18.3598 12.0008 18.5508 12.0008 18.75C12.0008 18.9491 11.9217 19.1401 11.7809 19.281C11.64 19.4218 11.449 19.5009 11.2499 19.5009C11.0507 19.5009 10.8597 19.4218 10.7189 19.281L3.96888 12.531C3.89903 12.4613 3.84362 12.3785 3.80581 12.2874C3.768 12.1963 3.74854 12.0986 3.74854 12C3.74854 11.9013 3.768 11.8036 3.80581 11.7125C3.84362 11.6214 3.89903 11.5386 3.96888 11.469L10.7189 4.71897C10.8597 4.57814 11.0507 4.49902 11.2499 4.49902C11.449 4.49902 11.64 4.57814 11.7809 4.71897C11.9217 4.8598 12.0008 5.05081 12.0008 5.24997C12.0008 5.44913 11.9217 5.64014 11.7809 5.78097L5.56038 12Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="golden-hub">GOLDEN HUB</div>
+        </div>
+      </div>
+      <div class="bank-details-box">
+        <p class="procedure">
+          To edit profile, tap on the button below to start editing.
+        </p>
+        <div class="image-container">
+          <img src="image/profile-page-pix.svg" alt="profile page picture" />
+        </div>
+        <p class="phone">
+          Phone number:<span class="user-phone-number" id="phone">081</span>
+        </p>
+        <p class="username">
+          Username:<span class="profileUsername" id="profileUsername"
+            >Mandela</span
+          >
+        </p>
+        <div class="bank-details">Bank details</div>
+        <p class="bank-name">Bank name:<span id="bankName">Not added</span></p>
+        <p class="account-name">
+          Account name:<span id="accountName">Not added</span>
+        </p>
+        <p class="account-number">
+          Account number:<span id="accountNumber">Not added</span>
+        </p>
+      </div>
+      <div class="edit-btn">
+        <p>Edit profile</p>
+
+        <a href="edit-profile-page.html">
+          <div class="edit-vector">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M2.95671 17.4483H17.04C17.1505 17.4483 17.2565 17.4044 17.3347 17.3263C17.4128 17.2482 17.4567 17.1422 17.4567 17.0317C17.4567 16.9212 17.4128 16.8152 17.3347 16.737C17.2565 16.6589 17.1505 16.615 17.04 16.615H2.95671C2.8462 16.615 2.74022 16.6589 2.66208 16.737C2.58394 16.8152 2.54004 16.9212 2.54004 17.0317C2.54004 17.1422 2.58394 17.2482 2.66208 17.3263C2.74022 17.4044 2.8462 17.4483 2.95671 17.4483ZM8.09171 14.3167C8.44352 14.2177 8.76459 14.0314 9.02504 13.775L16.975 5.825C17.2473 5.55168 17.4001 5.18161 17.4001 4.79583C17.4001 4.41005 17.2473 4.03999 16.975 3.76667L16.1917 2.99167C15.9143 2.72726 15.5458 2.57976 15.1625 2.57976C14.7793 2.57976 14.4108 2.72726 14.1334 2.99167L6.18337 10.9333C5.92701 11.1924 5.74311 11.5143 5.65004 11.8667L5.03337 14.1667C5.00438 14.2717 5.00376 14.3826 5.03157 14.488C5.05938 14.5934 5.11464 14.6896 5.19171 14.7667C5.30981 14.8824 5.46803 14.9481 5.63337 14.95L8.09171 14.3167ZM8.43337 13.1833C8.27969 13.3397 8.08688 13.4519 7.87504 13.5083L7.0667 13.725L6.23337 12.8917L6.45004 12.0833C6.50758 11.872 6.61965 11.6794 6.77504 11.525L7.09171 11.2167L8.75004 12.875L8.43337 13.1833ZM9.34171 12.2833L7.68337 10.625L13.2917 5.01667L14.95 6.675L9.34171 12.2833ZM16.3834 5.24167L15.5417 6.08333L13.8834 4.425L14.725 3.575C14.8422 3.45796 15.0011 3.39222 15.1667 3.39222C15.3323 3.39222 15.4912 3.45796 15.6084 3.575L16.3834 4.35833C16.4996 4.47595 16.5648 4.63464 16.5648 4.8C16.5648 4.96536 16.4996 5.12405 16.3834 5.24167Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <!-- </a> -->
+      </div>
+    </div>
+    <script src="profile-page.js"></script>
+    <script src="sign-up-page.js"></script>
+  </body>
+</html>

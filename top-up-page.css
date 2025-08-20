@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 0%);  
+ }
+ .container{
+    overflow-y: auto;
+    overflow-x:hidden;
+    width: 390px;
+    height: 100vh;
+    background-color: #ffffff; 
+    font-weight: 400;
+    margin: auto; 
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+.nav-box{
+    width: inherit;
+    height: 10px;
+    height: auto;
+    background-color: #55005C;
+    color: white;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 25px
+}
+.menu-box{
+    padding-top: 5px;
+    display: flex;
+    width: 342px;
+    height: auto; 
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.notification-container svg{ 
+    display: block; 
+}
+.menu-box .notification-container{ 
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    border-radius: 50%;
+    background-color: white;
+} 
+.glo-container, .airtel-container, .mtn-container{
+    position: relative;
+    margin: auto;
+    width: 342px;
+    height: 284px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 45px;
+}
+.glo-container{
+    margin-top: 15px;
+}
+.mtn-container{
+    margin-bottom: 100px;
+}
+.glo-logo-box, .airtel-logo-box, .mtn-logo-box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.glo-container p, .airtel-container p, .mtn-container p{
+    position: absolute;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.glo-buy-btn, .airtel-buy-btn, .mtn-buy-btn{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 87px;
+    height: 38px;
+    color: white;
+    border-radius: 50px;
+    background: #55005C;
+    border: 6px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    bottom: 35px;
+    left: 21.5%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.bottom-nav-bar-container{
+    display: flex;
+    position: fixed;
+    width: 343px;
+    height: 85px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between; 
+    background-color: white;
+    z-index: 20;
+}
+.bottom-btn-container{
+    height: 80px;
+    width: 85px;
+    justify-items: center;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+.home-iconAndhome-content-box,
+.history-iconAndhistory-content-box,
+.data-iconAnddata-content-box,
+.profile-iconAndprofile-content-box{
+    height: 60px;
+    width: 60px;
+    justify-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.data-content{
+    color: rgb(166, 80, 0);
+}
+ 
