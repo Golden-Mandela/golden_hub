@@ -27,7 +27,7 @@ body{
 .nav-box{
     width: inherit;
     height: 130px;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(245, 3, 3); 
     z-index: 10;
     position: sticky;
     top: 0;
