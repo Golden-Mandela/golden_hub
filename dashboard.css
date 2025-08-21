@@ -403,9 +403,7 @@ marquee{
     left: 50%;
     transform: translateX(-50%);
     justify-content: space-between; 
-    background-color: rgb(255, 255, 255);
-    /* padding-bottom: 50px; */
-    /* z-index: 2px; */
+    background-color: rgb(255, 255, 255); 
 }
 .bottom-btn-container{
     height: 80px;
