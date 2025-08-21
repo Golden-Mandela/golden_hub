@@ -1,31 +1,29 @@
-body{
+ html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-    background-color: hsl(0, 0%, 0%);  
- }
- .main-container{
-    position: relative;
-    width: 390px; 
-    height: 100vh;
-    margin: auto; 
- }
+    background-color: hsl(0, 0%, 0%);
+    overflow-x: hidden; 
+}
+* {
+    box-sizing: border-box;
+    max-width: 100%; 
+}
+
  .container{
-    overflow-y: auto;
-    overflow-x:hidden;
+    margin: auto;
+    overflow-y: auto; 
     width: 390px;
     height: 100vh;
-    background-color: #ffffff; 
     font-weight: 400;
-    margin: auto; 
+    background-color: white;
 }
 .container::-webkit-scrollbar {
     display: none;
   }
 .nav-box{
     width: inherit;
-    height: 135px;
+    height: 100px;
     background-color: rgb(255, 255, 255); 
     z-index: 10;
     position: sticky;
@@ -33,7 +31,7 @@ body{
     margin: 0 auto;
 }
 .menu-box{
-    padding-top: 45px;
+    padding-top: 8px;
     display: flex;
     width: 342px;
     height: auto; 
@@ -293,7 +291,7 @@ body{
 .pop-up-menu-box{
     position: sticky;
     top: 0px;
-    padding-top: 75px;
+    padding-top: 25px;
     display: flex;
     width: 342px;
     height: auto; 
@@ -330,7 +328,7 @@ body{
 
 .plan-list-container{
     position:absolute;
-    top: 47%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: scroll; 
