@@ -23,7 +23,7 @@
   }
 .nav-box{
     width: inherit;
-    height: 40px;
+    height: 41px;
     background-color: rgb(255, 255, 255); 
     z-index: 10;
     position: sticky;
