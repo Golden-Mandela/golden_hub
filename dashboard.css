@@ -468,16 +468,17 @@ marquee{
     height: auto;
     font-size: 20px;
     font-weight: 300;
+
 }
 .home-btn-box{
-    padding-bottom: 29px;
-    padding-top: 35px;
     display: flex;
     height: 30px;
     width: 85%;
     margin: auto;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: aqua;
 }
 .home-btn-box .return-home-btn{
     display: block;
