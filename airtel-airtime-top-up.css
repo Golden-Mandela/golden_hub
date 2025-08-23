@@ -79,7 +79,7 @@
 .profile-box{
     display: flex;
     height: 30px;
-    width: 145px;
+    width: auto;
     justify-content: space-between; 
 }
 .profile-img{
@@ -99,6 +99,7 @@
     width: auto;
     line-height: normal;
     text-align:left;
+    margin-left: 8px;
 }
 .username .greeting{
     color: #310048; 
