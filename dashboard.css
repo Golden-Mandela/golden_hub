@@ -477,8 +477,7 @@ marquee{
     margin: auto;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: aqua;
+    margin-top: 40px; 
 }
 .home-btn-box .return-home-btn{
     display: block;
