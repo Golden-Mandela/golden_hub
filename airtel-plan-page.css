@@ -23,7 +23,7 @@
   }
 .nav-box{
     width: inherit;
-    height: 100px;
+    height: 70px;
     background-color: rgb(255, 255, 255); 
     z-index: 10;
     position: sticky;
@@ -67,58 +67,6 @@
     margin-top: 3px;
     height: auto;
     cursor: pointer;
-}
-.profile-container{
-    position: absolute;
-    display: flex;
-    width: 342px;
-    height: 30px;
-    justify-content: space-between; 
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-    padding-right: 10px;
-}
-.profile-box{
-    display: flex;
-    height: 30px;
-    width: 150px;
-    justify-content: space-between; 
-}
-.profile-img{
-    width: 25px;
-    height: 25px;
-    border-radius: 25px; 
-}
-.profile-img img{
-    display: inline-block;
-    width: 25px;
-    height: 25px; 
-    border-radius: 25px;
-    margin-top: 2.5px;
-}
-.username{
-    height: auto;
-    width: auto;
-    line-height: normal;
-    text-align:left;
-}
-.username .greeting{
-    color: #310048; 
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    margin: 0px;
-    margin-left: 10px;
-}
-.username .name{
-    margin-left: 10px;
-    color: rgba(0, 0, 0, 0.70); 
-    font-size: 16px; 
-    font-weight: 500;
-    margin-top: -2px
-    
 }
  
 /*  */

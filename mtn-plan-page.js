@@ -1,7 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const user = JSON.parse(localStorage.getItem("loggedInUser"));
-  document.querySelector(".name").textContent = user?.username || "";
-});
 document.querySelector(".back").addEventListener("click", () => {
   window.history.back();
 });
