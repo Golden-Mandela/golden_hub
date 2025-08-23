@@ -50,13 +50,13 @@
     align-items: center;
     /* background-color: blue; */
 }
-.menu-container .logo{
+.menu-box .center-text{
     width: auto;
-    height: 12px; 
-    color: #000; 
-    font-size: 10px; 
-    font-weight: 600; 
-    
+    height: 15px; 
+    color: rgba(0, 0, 0, 0.90);   
+    font-size: 15px; 
+    font-weight: 500;
+    margin-left: 40px;
 }
 .menu-box .center-text{
     width: auto;

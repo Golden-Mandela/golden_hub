@@ -477,6 +477,7 @@ marquee{
     width: 85%;
     margin: auto;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .home-btn-box .return-home-btn{
     display: block;

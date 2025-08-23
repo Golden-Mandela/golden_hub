@@ -64,6 +64,7 @@
     color: rgba(0, 0, 0, 0.90);   
     font-size: 15px; 
     font-weight: 500;
+    margin-left: 40px;
 }
 .menu-box .notification-container{ 
     margin-top: 3px;

@@ -30,7 +30,7 @@
 .menu-box{
     position: sticky;
     top: 0;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     width: 342px;
     height: auto; 

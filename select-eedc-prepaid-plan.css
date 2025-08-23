@@ -47,8 +47,7 @@
     width: 25px;
     height: 20px; 
     justify-content: space-between;
-    align-items: center;
-    /* background-color: blue; */
+    align-items: center; 
 }
 .menu-container .logo{
     width: auto;
@@ -64,6 +63,7 @@
     color: rgba(0, 0, 0, 0.90);   
     font-size: 15px; 
     font-weight: 500;
+    margin-left: 40px;
 }
 .menu-box .notification-container{ 
     margin-top: 3px;
