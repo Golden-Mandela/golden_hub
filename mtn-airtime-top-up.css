@@ -81,12 +81,13 @@
     display: flex;
     height: 30px;
     width: auto;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 .profile-img{
     width: 25px;
     height: 25px;
     border-radius: 25px;
+    margin-right: 8px;
 }
 .profile-img img{
     display: inline-block;
@@ -100,14 +101,13 @@
     width: auto;
     line-height: normal;
     text-align:left;
-    margin-left: 8px;
 }
 .username .greeting{
     color: #310048; 
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
-    margin: 0px; 
+    margin: 0px;
 }
 .username .name{
     color: rgba(0, 0, 0, 0.70); 
