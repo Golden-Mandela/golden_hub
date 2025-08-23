@@ -83,7 +83,7 @@
 .profile-box{
     display: flex;
     height: 30px;
-    width: 135px;
+    width: 150px;
     justify-content: space-between; 
 }
 .profile-img{
@@ -102,20 +102,23 @@
     height: auto;
     width: auto;
     line-height: normal;
-    text-align:left; 
+    text-align:left;
 }
 .username .greeting{
     color: #310048; 
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
-    margin: 0px; 
+    margin: 0px;
+    margin-left: 10px;
 }
 .username .name{
+    margin-left: 10px;
     color: rgba(0, 0, 0, 0.70); 
     font-size: 16px; 
     font-weight: 500;
     margin-top: -2px
+    
 }
  
 /*  */

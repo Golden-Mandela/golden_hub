@@ -79,13 +79,13 @@
 .profile-box{
     display: flex;
     height: 30px;
-    width: 135px;
+    width: 145px;
     justify-content: space-between; 
 }
 .profile-img{
     width: 25px;
     height: 25px;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
 .profile-img img{
     display: inline-block;
@@ -98,7 +98,7 @@
     height: auto;
     width: auto;
     line-height: normal;
-    text-align:left; 
+    text-align:left;
 }
 .username .greeting{
     color: #310048; 

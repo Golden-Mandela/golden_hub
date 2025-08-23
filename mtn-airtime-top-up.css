@@ -80,7 +80,7 @@
 .profile-box{
     display: flex;
     height: 30px;
-    width: 135px;
+    width: 145px;
     justify-content: space-between; 
 }
 .profile-img{
